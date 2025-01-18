@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    line-height: 1.6;
+  }
+
+  .header {
+    background-color: #1d1d1f;
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  .header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  
+  .header nav ul li a:hover {
+    color: #f04e23;
+  }
+
+  .main {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .main h2 {
+    font-size: 2rem;
+  }
+  
+  .main label {
+    color: #fff;
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+  
+  .main select {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #1d1d1f;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 5px;
+  }
+  
+  .cta-btn {
+    background-color: #f04e23; /* MLB orange accent color */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .cta-btn:hover {
+    background-color: #e04c1e;
+  }
+
+  .updates-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #1f1f21;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .updates-section h3 {
+    color: #f04e23;
+  }
+  
+  .frequency-options {
+    margin: 15px 0;
+  }
+  
+  .frequency-options label {
+    margin-left: 10px;
+    margin-right: 20px;
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .frequency-options input[type="radio"] {
+    margin-right: 5px;
+  }
+ 
+  .features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .features h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: white;
+  }
+  
+  .feature-card {
+    background-color: #1f1f21; /* Slightly lighter than the background */
+    color: white;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for card effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .footer {
+    background-color: #1d1d1f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .footer p {
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .header nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .features {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .feature-card {
+      width: 80%;
+    }
+  
+    .cta-btn {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .main h2 {
+      font-size: 1.5rem;
+    }
+  
+    .cta-btn {
+      padding: 15px;
+      font-size: 1.5rem;
+    }
+  }
+  

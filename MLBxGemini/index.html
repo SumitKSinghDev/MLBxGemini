@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalized Fan Highlights</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>MLBxGemini</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Teams</a></li>
+        <li><a href="#">Players</a></li>
+        <li><a href="#">Updates</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <h2>Your Favorite Baseball Highlights, Personalized</h2>
+    <p>Select your team and player to get personalized updates.</p>
+
+    <label for="team">Choose a Team:</label>
+    <select id="team">
+      <option value="team1">Team 1</option>
+      <option value="team2">Team 2</option>
+    </select>
+
+    <label for="player">Choose a Player:</label>
+    <select id="player">
+      <option value="player1">Player 1</option>
+      <option value="player2">Player 2</option>
+    </select>
+
+    <button id="fetchBtn" class="cta-btn">Get Highlights</button>
+
+    <div class="updates-section">
+      <h3>Regular Updates</h3>
+      <p>Select how often you want updates:</p>
+      <div class="frequency-options">
+        <input type="radio" id="daily" name="frequency" value="Daily">
+        <label for="daily">Daily</label>
+
+        <input type="radio" id="weekly" name="frequency" value="Weekly">
+        <label for="weekly">Weekly</label>
+
+        <input type="radio" id="monthly" name="frequency" value="Monthly">
+        <label for="monthly">Monthly</label>
+      </div>
+      <button id="updateBtn" class="cta-btn">Subscribe</button>
+    </div>
+
+    <p id="highlightResult"></p>
+  </main>
+
+  <section class="features">
+    <h3>Features</h3>
+    <div class="feature-card">
+      <h4>Custom Feeds</h4>
+      <p>Select the teams and players you want to follow and get updates.</p>
+    </div>
+    <div class="feature-card">
+      <h4>Multi-language Support</h4>
+      <p>Receive highlights in English, Spanish, and Japanese.</p>
+    </div>
+    <div class="feature-card">
+      <h4>Interactive Content</h4>
+      <p>Audio, video, and text-based highlights delivered to you.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Personalized Fan Highlights. All Rights Reserved. (MLBxGemini Hackathon)</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
