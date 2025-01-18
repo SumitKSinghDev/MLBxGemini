@@ -4,78 +4,114 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personalized Fan Highlights</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <h1>MLBxGemini</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Teams</a></li>
-        <li><a href="#">Players</a></li>
-        <li><a href="#">Updates</a></li>
-      </ul>
+
+  <header class="header bg-dark text-white text-center py-3">
+    <h1><i class="fas fa-baseball-ball"></i> MLBxGemini</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Teams</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Players</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Updates</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
-  <main class="main">
-    <h2>Your Favorite Baseball Highlights, Personalized</h2>
-    <p>Select your team and player to get personalized updates.</p>
+  <main class="container my-5 text-center">
+    <h2 class="mb-4">Your Favorite Baseball Highlights, Personalized</h2>
+    <p class="mb-4">Select your team and player to get personalized updates.</p>
 
-    <label for="team">Choose a Team:</label>
-    <select id="team">
-      <option value="team1">Team 1</option>
-      <option value="team2">Team 2</option>
-    </select>
+    <div class="form-group">
+      <label for="team" class="font-weight-bold">Choose a Team:</label>
+      <select id="team" class="custom-select w-50 mx-auto">
+        <option value="team1">Team 1</option>
+        <option value="team2">Team 2</option>
+      </select>
+    </div>
 
-    <label for="player">Choose a Player:</label>
-    <select id="player">
-      <option value="player1">Player 1</option>
-      <option value="player2">Player 2</option>
-    </select>
+    <div class="form-group">
+      <label for="player" class="font-weight-bold">Choose a Player:</label>
+      <select id="player" class="custom-select w-50 mx-auto">
+        <option value="player1">Player 1</option>
+        <option value="player2">Player 2</option>
+      </select>
+    </div>
 
-    <button id="fetchBtn" class="cta-btn">Get Highlights</button>
+    <button id="fetchBtn" class="btn btn-primary my-3"><i class="fas fa-search"></i> Get Highlights</button>
 
-    <div class="updates-section">
+    <div class="updates-section mt-5">
       <h3>Regular Updates</h3>
       <p>Select how often you want updates:</p>
-      <div class="frequency-options">
-        <input type="radio" id="daily" name="frequency" value="Daily">
-        <label for="daily">Daily</label>
 
-        <input type="radio" id="weekly" name="frequency" value="Weekly">
-        <label for="weekly">Weekly</label>
-
-        <input type="radio" id="monthly" name="frequency" value="Monthly">
-        <label for="monthly">Monthly</label>
+      <div class="subscribe-section">
+        <div class="frequency-options">
+          <input type="radio" id="daily" name="frequency" value="Daily">
+          <label for="daily">Daily</label>
+      
+          <input type="radio" id="weekly" name="frequency" value="Weekly">
+          <label for="weekly">Weekly</label>
+      
+          <input type="radio" id="monthly" name="frequency" value="Monthly">
+          <label for="monthly">Monthly</label>
+        </div>
+      
+        <button id="updateBtn" class="cta-btn">
+          <i class="fas fa-bell"></i> Subscribe
+        </button>
       </div>
-      <button id="updateBtn" class="cta-btn">Subscribe</button>
+      
+      
     </div>
 
-    <p id="highlightResult"></p>
+    <p id="highlightResult" class="mt-4"></p>
   </main>
 
-  <section class="features">
-    <h3>Features</h3>
-    <div class="feature-card">
-      <h4>Custom Feeds</h4>
-      <p>Select the teams and players you want to follow and get updates.</p>
-    </div>
-    <div class="feature-card">
-      <h4>Multi-language Support</h4>
-      <p>Receive highlights in English, Spanish, and Japanese.</p>
-    </div>
-    <div class="feature-card">
-      <h4>Interactive Content</h4>
-      <p>Audio, video, and text-based highlights delivered to you.</p>
+  <section class="features bg-light py-5">
+    <div class="container">
+      <h3 class="text-center mb-5">Features</h3>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="feature-card card p-4">
+            <i class="fas fa-rss fa-3x mb-3"></i>
+            <h4>Custom Feeds</h4>
+            <p>Select the teams and players you want to follow and get updates.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card card p-4">
+            <i class="fas fa-globe fa-3x mb-3"></i>
+            <h4>Multi-language Support</h4>
+            <p>Receive highlights in English, Spanish, and Japanese.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card card p-4">
+            <i class="fas fa-video fa-3x mb-3"></i>
+            <h4>Interactive Content</h4>
+            <p>Audio, video, and text-based highlights delivered to you.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <footer class="footer">
+  <footer class="footer bg-dark text-white text-center py-3">
     <p>&copy; 2025 Personalized Fan Highlights. All Rights Reserved. (MLBxGemini Hackathon)</p>
   </footer>
 
+  <!-- Bootstrap and jQuery Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
