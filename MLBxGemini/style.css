@@ -1,186 +1,161 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
- 
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: white;
-    line-height: 1.6;
-  }
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa; 
+  color: #333;
+}
 
-  .header {
-    background-color: #1d1d1f;
-    padding: 20px;
-    color: white;
-    text-align: center;
-  }
-  
-  .header h1 {
-    font-size: 2rem;
-  }
-  
-  .header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-  }
-  
-  .header nav ul li a:hover {
-    color: #f04e23;
-  }
+.header h1 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin: 0;
+}
 
-  .main {
-    padding: 30px;
-    text-align: center;
-  }
-  
-  .main h2 {
-    font-size: 2rem;
-  }
-  
-  .main label {
-    color: #fff;
-    font-size: 1rem;
-    margin-right: 10px;
-  }
-  
-  .main select {
-    margin: 10px 0;
-    padding: 10px;
-    background-color: #1d1d1f;
-    color: #fff;
-    border: 1px solid #444;
-    border-radius: 5px;
-  }
-  
-  .cta-btn {
-    background-color: #f04e23; /* MLB orange accent color */
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    cursor: pointer;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    margin-top: 10px;
-  }
-  
-  .cta-btn:hover {
-    background-color: #e04c1e;
-  }
+.header nav ul {
+  list-style-type: none;
+  padding: 0;
+}
 
-  .updates-section {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #1f1f21;
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  .updates-section h3 {
-    color: #f04e23;
-  }
-  
-  .frequency-options {
-    margin: 15px 0;
-  }
-  
-  .frequency-options label {
-    margin-left: 10px;
-    margin-right: 20px;
-    font-size: 1rem;
-    color: white;
-  }
-  
-  .frequency-options input[type="radio"] {
-    margin-right: 5px;
-  }
- 
-  .features {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
-    text-align: center;
-    gap: 20px;
-  }
-  
-  .features h3 {
+.header nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.header nav ul li a:hover {
+  color: #17a2b8; 
+}
+
+.main h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.main p {
+  font-size: 1.1rem;
+}
+
+/* Styling the frequency options as buttons */
+.frequency-options {
+  display: inline-block;
+  border: 1px solid #17a2b8;
+  border-radius: 5px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.frequency-options input[type="radio"] {
+  display: none;
+}
+
+.frequency-options label {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #17a2b8;
+  background-color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.frequency-options input[type="radio"]:checked + label {
+  background-color: #17a2b8;
+  color: white;
+}
+
+/* Styling the Subscribe button */
+.cta-btn {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 12px 25px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-left: 10px; /* Adding some space between the options and the button */
+  transition: background-color 0.3s;
+}
+
+.cta-btn i {
+  margin-right: 5px;
+}
+
+.cta-btn:hover {
+  background-color: #218838; /* Darker green for hover effect */
+}
+
+/* Wrapping section for proper alignment */
+.subscribe-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+
+.cta-btn:hover {
+  background-color: #0062cc; 
+  color: white;
+}
+
+.updates-section {
+  background-color: #e9ecef;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.features {
+  padding: 50px 0;
+}
+
+.features .feature-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.features .feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.features .feature-card h4 {
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+
+.features .feature-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.footer {
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Custom media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .main select, .main .cta-btn {
     width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-    color: white;
-  }
-  
-  .feature-card {
-    background-color: #1f1f21; /* Slightly lighter than the background */
-    color: white;
-    border: 1px solid #444;
-    border-radius: 8px;
-    padding: 20px;
-    width: 30%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for card effect */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .feature-card:hover {
-    transform: translateY(-5px); /* Slight lift effect on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   }
 
-  .footer {
-    background-color: #1d1d1f;
-    color: white;
-    text-align: center;
-    padding: 10px;
+  .header nav ul li {
+    display: block;
+    margin: 10px 0;
   }
-  
-  .footer p {
-    font-size: 1rem;
-  }
-
-  @media screen and (max-width: 768px) {
-    .header nav ul {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .features {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .feature-card {
-      width: 80%;
-    }
-  
-    .cta-btn {
-      width: 100%;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .header h1 {
-      font-size: 1.5rem;
-    }
-  
-    .main h2 {
-      font-size: 1.5rem;
-    }
-  
-    .cta-btn {
-      padding: 15px;
-      font-size: 1.5rem;
-    }
-  }
-  
+}
